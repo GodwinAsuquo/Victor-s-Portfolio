@@ -47,8 +47,6 @@ if (window.location.pathname === '/home'){
         setTextColor('#000000');
       setBackgroundColor('#FFFFFF')
     }
-//     window.location.pathname === '/home'? (setBackgroundColor('#000000'), setTextColor('#FFFFFF')) : (setTextColor('#000000'), setBackgroundColor('#FFFFFF'));
-// }
   }
 
 
