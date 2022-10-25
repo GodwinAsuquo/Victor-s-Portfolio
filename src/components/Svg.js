@@ -1,0 +1,20 @@
+import React from 'react'
+
+const Svg = () => {
+  return (
+    <div id='svg'>
+        <svg width="1440" height="878" viewBox="0 0 1440 878" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="716.001" cy="955.127" rx="147.074" ry="141.791" transform="rotate(-62.2166 716.001 955.127)" stroke="#141414" strokeOpacity="0.1"/>
+<ellipse cx="716" cy="955.126" rx="245.123" ry="236.318" transform="rotate(-62.2166 716 955.126)" stroke="#141414" strokeOpacity="0.1"/>
+<ellipse cx="716" cy="955.128" rx="343.172" ry="330.845" transform="rotate(-62.2166 716 955.128)" stroke="#141414" strokeOpacity="0.1"/>
+<ellipse cx="716" cy="955.127" rx="441.221" ry="425.372" transform="rotate(-62.2166 716 955.127)" stroke="#141414" strokeOpacity="0.1"/>
+<ellipse cx="716" cy="955.128" rx="539.27" ry="519.899" transform="rotate(-62.2166 716 955.128)" stroke="#141414" strokeOpacity="0.1"/>
+<ellipse cx="716" cy="955.127" rx="637.319" ry="614.426" transform="rotate(-62.2166 716 955.127)" stroke="#141414" strokeOpacity="0.1"/>
+<ellipse cx="716" cy="955.127" rx="735.368" ry="708.954" transform="rotate(-62.2166 716 955.127)" stroke="#141414" strokeOpacity="0.1"/>
+</svg>
+
+    </div>
+  )
+}
+
+export default Svg

@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
+import WithNav from './components/WithNav';
+import WithoutNav from './components/WithoutNav';
+import { Home, Chronicare, Epay, Portfolio,WellaAgent, Wephco, Intro } from './pages';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ return (
+    <BrowserRouter>
+    <ScrollToTop>
+    <Routes>
+        <Route element={<WithoutNav />}>
+            <Route path='/' element={<Intro/>}/>
+        </Route>
+        <Route element={<WithNav />}>
+        <Route path='home' element={<Home/>}/>
+        <Route path='chronicare' element={<Chronicare/>}/>
+        <Route path='epay' element={<Epay/>}/>
+        <Route path='Portfolio' element={<Portfolio/>}/>
+        <Route path='wella-agent' element={<WellaAgent/>}/>
+        <Route path='wephco' element={<Wephco/>}/>
+        </Route>
+    </Routes>
+    </ScrollToTop>
+    </BrowserRouter>
+)
 }
+
 
 export default App;

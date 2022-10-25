@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    scroll-behavior: smooth;
+    letter-spacing: 0.02em;
+}
+#svg{
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
+    position: fixed;
+}
+@media (max-width: 768px) {
+    #svg {
+        left:-70%
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+.wephco{
+    @apply relative flex bg-[#0B4F6C] h-[250px] md:h-[390px] w-[100%] rounded-lg p-5 text-white;
+}
+}
+
+#logo {
+    /* animation: colorFill 0.5s ease forwards 3.5s; */
+    fill: black;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray: 482.86279296875;
+    stroke-dashoffset: 482.86279296875;
+    animation: lineAnim 2s ease forwards;
+}
+
+#logo path:nth-child(3) {
+    stroke-dasharray: 489.5826416015625;
+    stroke-dashoffset: 489.5826416015625;
+    animation: lineAnim 2s ease forwards 0.3s;
+
+}
+
+#logo path:nth-child(4) {
+    stroke-dasharray: 483.4815673828125;
+    stroke-dashoffset: 483.4815673828125;
+    animation: lineAnim 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(5) {
+    stroke-dasharray: 615.7455444335938;
+    stroke-dashoffset: 615.7455444335938;
+    animation: lineAnim 2s ease forwards 0.9s;
+}
+
+#logo path:nth-child(6) {
+    stroke-dasharray: 483.4817199707031;
+    stroke-dashoffset: 483.4817199707031;
+    animation: lineAnim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(7) {
+    stroke-dasharray: 549.8696899414062;
+    stroke-dashoffset: 549.8696899414062;
+    animation: lineAnim 2s ease forwards 1.5s;
+}
+
+@keyframes lineAnim {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes colorFill {
+    from{
+        fill: transparent;
+    }
+    to {
+        fill: black;
+    }
 }
