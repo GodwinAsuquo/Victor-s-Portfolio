@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { BsMoon, BsSun } from "react-icons/bs";
-import UseDarkMode from './UseDarkMode';
 import { Link, useLocation } from 'react-router-dom';
 
 
@@ -54,7 +53,7 @@ const refContainer = useRef()
 
   useEffect(()=>{
     changeNavColor()
-    console.log(refContainer.current);
+    // console.log(refContainer.current);
   }, [location])
 
 const toggleTheme = ()=>{
@@ -79,12 +78,12 @@ useEffect(()=>{
       </Link>
     
       <div className={`w-[33%] md:w-[68%] flex justify-end md:justify-center lg:justify-end`}>
-        <button ref={refContainer} className={`bg-[${backgroundColor}] text-[${textColor}] dark:bg-white flex dark:text-black  p-1 rounded-full`} onClick={toggleTheme}>
+        <button  className={`bg-[${backgroundColor}] text-[${textColor}] dark:bg-white flex dark:text-black  p-1 rounded-full`} onClick={toggleTheme}>
           {theme?  <BsSun /> : <BsMoon />}
         </button>
       </div>
 
-        <button className={`absolute bg-[${backgroundColor}] text-[${textColor}] right-10 text-white  bg-black dark:bg-white px-4 py-1 rounded-[3px] underline underline-offset-2 dark:text-[#131313] md:hidden`}>
+        <button ref={refContainer} className={`absolute bg-[${backgroundColor}] text-[${textColor}] right-10 text-white  bg-black dark:bg-white px-4 py-1 rounded-[3px] underline underline-offset-2 dark:text-[#131313] md:hidden`}>
           <a href="https://docs.google.com/document/d/e/2PACX-1vSecgDfuqRhJduPZcRQlVJzlCqrHG5WkReehjWWnZm-z2KCGLmRShZIUF7zpas74gFe3sNYN_rl33XK/pub" target="_blank">My Resume</a>
         </button>
         <button className={`absolute hidden bg-[${backgroundColor}] text-[${textColor}]  text-white right-10 dark:text-[#131313] dark:bg-white bg-black px-4 py-1 rounded-[3px] underline underline-offset-2 md:block`}><a href="https://docs.google.com/document/d/e/2PACX-1vSecgDfuqRhJduPZcRQlVJzlCqrHG5WkReehjWWnZm-z2KCGLmRShZIUF7zpas74gFe3sNYN_rl33XK/pub" target="_blank">View My Resume</a></button>

@@ -25,7 +25,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
         <p className='flex flex-row items-center text-xs md:text-base'>
           See work<FiChevronRight/></p> 
             </div>
-            <img className='absolute bottom-0 right-0 w-[270px] md:w-[75%]' src={wephco} alt='wephco image' />
+            <img className='absolute bottom-0 right-0 w-[75%]' src={wephco} alt='wephco image' />
             </div>
             </Link>
 
@@ -40,7 +40,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
         <p className='flex flex-row items-center text-xs md:text-base'>
           See work<FiChevronRight/></p> 
             </div>
-            <img className='absolute bottom-0 right-[8%] w-[220px] md:w-[358px]' src={wellahealth} alt='wephco image' />
+            <img className='absolute bottom-0 right-[8%] w-[55%]' src={wellahealth} alt='wephco image' />
             </div>
             </Link>
 
@@ -55,7 +55,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
         <p className='flex flex-row items-center text-xs md:text-base'>
           See work<FiChevronRight/></p>
             </div>
-            <img className='absolute bottom-0 right-[8%] w-[220px] md:w-[358px]' src={epay} alt='wephco image' />
+            <img className='absolute bottom-0 right-[8%] w-[55%]' src={epay} alt='wephco image' />
             </div>
             </Link>
 
@@ -70,7 +70,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
         <p className='flex flex-row items-center text-xs md:text-base'>
           See work<FiChevronRight/></p>
             </div>
-            <img className='absolute bottom-0 right-0 w-[270px] md:w-[75%]' src={portfolio} alt='wephco image' />
+            <img className='absolute bottom-0 right-0 w-[72%] md:w-[75%]' src={portfolio} alt='wephco image' />
             </div>
             </Link>
 
@@ -85,7 +85,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
         <p className='flex flex-row items-center text-xs md:text-base'>
           See work<FiChevronRight/></p>
             </div>
-            <img className='absolute bottom-0 right-0 w-[270px] md:w-[75%]' src={chronicare} alt='wephco image' />
+            <img className='absolute bottom-0 right-0 w-[71%] md:w-[75%]' src={chronicare} alt='wephco image' />
             </div>
             </Link>
        </div>
