@@ -21,7 +21,7 @@ const Navbar = () => {
   const changeNavProperties = () => {
     if (window.location.pathname === "/home") {
       setNavBackground("#fff");
-      setTextColor("#fff");
+      setTextColor("#000");
       setIconBackground("#000");
     } else if (window.location.pathname === "/wephco") {
       setNavBackground("#095069");
