@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="dark:bg-[#0D0D0D]">
-      <div className="container mx-auto flex flex-col items-center py-32 md:py-48  dark:text-white">
+      <div className="container mx-auto flex flex-col items-center py-28 md:py-48  dark:text-white">
         <p className="text-lg md:text-xl">HELLO, NICE TO MEET YOU</p>
         <h1 className="font-[800] mt-6 text-[32px] md:text-7xl  text-deepBlack dark:text-white">
           I am{" "}
