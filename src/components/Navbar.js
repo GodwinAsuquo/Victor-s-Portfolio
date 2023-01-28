@@ -21,28 +21,28 @@ const Navbar = () => {
   const changeNavProperties = () => {
     if (window.location.pathname === "/home") {
       setNavBackground("#fff");
-      setTextColor("#000");
+      setTextColor("#fff");
       setIconBackground("#000");
     } else if (window.location.pathname === "/wephco") {
       setNavBackground("#095069");
-      setTextColor("#fff");
-      setIconBackground("#000");
+      setTextColor("#000");
+      setIconBackground("#fff");
     } else if (window.location.pathname === "/wella-agent") {
       setNavBackground("#4059AD");
-      setTextColor("#fff");
-      setIconBackground("#000");
+      setTextColor("#000");
+      setIconBackground("#fff");
     } else if (window.location.pathname === "/epay") {
       setNavBackground("#465055");
-      setTextColor("#000000");
+      setTextColor("#000");
       setIconBackground("#FFF");
     } else if (window.location.pathname === "/portfolio") {
       setNavBackground("#094440");
-      setTextColor("#000000");
-      setIconBackground("#FFFFFF");
+      setTextColor("#000");
+      setIconBackground("#FFF");
     } else if (window.location.pathname === "/chronicare") {
       setNavBackground("#1489C8");
-      setTextColor("#000000");
-      setIconBackground("#FFFFFF");
+      setTextColor("#000");
+      setIconBackground("#FFF");
     }
   };
 
