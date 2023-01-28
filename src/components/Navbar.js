@@ -21,8 +21,8 @@ const Navbar = () => {
   const changeNavProperties = () => {
     if (window.location.pathname === "/home") {
       setNavBackground("#fff");
-      setTextColor("white");
-      setIconBackground("white");
+      setTextColor("#fff");
+      setIconBackground("#000");
     } else if (window.location.pathname === "/wephco") {
       setNavBackground("#095069");
       setTextColor("#fff");
@@ -82,7 +82,7 @@ const Navbar = () => {
         </h4>
       </Link>
 
-      <div className={` w-[33%] lg:w-[68%] flex justify-center lg:justify-end`}>
+      <div className={`absolute w-[33%] flex right-14 md:-right-20`}>
         <button
           className={`bg-[${iconBackground}] text-[${textColor}] dark:bg-white flex dark:text-black p-1 rounded-full`}
           onClick={toggleTheme}
@@ -93,7 +93,7 @@ const Navbar = () => {
 
       <button
         ref={refContainer}
-        className={` bg-[${iconBackground}] text-[${textColor}]  text-white  bg-black dark:bg-white px-4 py-1 rounded-[3px] underline underline-offset-2 dark:text-[#131313] md:hidden`}
+        className={`absolute bg-[${iconBackground}] text-[${textColor}] right-10 text-white  bg-black dark:bg-white px-4 py-1 rounded-[3px] underline underline-offset-2 dark:text-[#131313] md:hidden`}
       >
         <a
           href="https://docs.google.com/document/d/e/2PACX-1vSecgDfuqRhJduPZcRQlVJzlCqrHG5WkReehjWWnZm-z2KCGLmRShZIUF7zpas74gFe3sNYN_rl33XK/pub"

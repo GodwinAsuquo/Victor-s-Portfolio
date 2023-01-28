@@ -28,7 +28,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
               </p>
             </div>
             <img
-              className="absolute bottom-0 right-0 w-[75%]"
+              className="absolute bottom-0 right-0 w-[75%] max-w-[450px]"
               src={wephco}
               alt="wephco image"
             />
@@ -49,7 +49,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
               </p>
             </div>
             <img
-              className="absolute bottom-0 right-[8%] w-[55%]"
+              className="absolute bottom-0 right-[8%] w-[55%] max-w-[350px]"
               src={wellahealth}
               alt="wephco image"
             />
@@ -70,7 +70,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
               </p>
             </div>
             <img
-              className="absolute bottom-0 right-[8%] w-[55%]"
+              className="absolute bottom-0 right-[8%] w-[55%] max-w-[350px]"
               src={epay}
               alt="wephco image"
             />
@@ -91,7 +91,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
               </p>
             </div>
             <img
-              className="absolute bottom-0 right-0 w-[72%] md:w-[75%]"
+              className="absolute bottom-0 right-0 w-[72%] md:w-[75%] max-w-[450px]"
               src={portfolio}
               alt="wephco image"
             />
@@ -100,7 +100,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
 
         {/* chronicare  */}
         <Link to="/chronicare">
-          <div className="relative flex bg-[#1489C8] h-[250px] md:h-[390px] w-[100%] rounded-lg p-5 text-white ">
+          <div className="relative flex bg-[#1489C8] h-[250px] md:h-[390px] w-[100%]  rounded-lg p-5 text-white ">
             <div className="flex flex-col justify-between">
               <div>
                 <h3 className="font-semi-bold md:text-lg">CHRONICARE</h3>
@@ -112,7 +112,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
               </p>
             </div>
             <img
-              className="absolute bottom-0 right-0 w-[71%] md:w-[75%]"
+              className="absolute bottom-0 right-0 w-[71%] max-w-[450px] md:w-[75%]"
               src={chronicare}
               alt="wephco image"
             />
