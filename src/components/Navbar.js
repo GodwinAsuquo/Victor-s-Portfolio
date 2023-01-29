@@ -13,7 +13,7 @@ const getStorageTheme = () => {
 const Navbar = () => {
   const [theme, setTheme] = useState(getStorageTheme());
   const [navBackground, setNavBackground] = useState("");
-  const [textColor, setTextColor] = useState(false);
+  const [textColor, setTextColor] = useState("");
   const [iconBackground, setIconBackground] = useState("");
 
   const location = useLocation();
@@ -21,8 +21,8 @@ const Navbar = () => {
   const changeNavProperties = () => {
     if (window.location.pathname === "/home") {
       setNavBackground("#fff");
-      setTextColor(true);
-      setIconBackground("#000");
+      setTextColor("white");
+      setIconBackground("black");
     } else if (window.location.pathname === "/wephco") {
       setNavBackground("#095069");
       setTextColor("#000");
@@ -69,7 +69,12 @@ const Navbar = () => {
     <div
       className={`fixed bg-[${navBackground}] shadow-sm dark:bg-[#131313] px-10 py-5 w-full mx-aut0 flex items-center z-10 text-base md:text-lg`}
     >
-      <Link to="/home" className={`text-[${iconBackground}]`}>
+      <Link
+        to="/home"
+        className={`text-[${
+          window.location.pathname === "/home" ? "black" : "white"
+        }]`}
+      >
         <h4
           className={`tracking-wider md:text-xl  dark:text-white font-semibold`}
         >
@@ -79,9 +84,7 @@ const Navbar = () => {
 
       <div className={`absolute w-[33%] flex right-14 md:-right-20`}>
         <button
-          className={`bg-[${iconBackground}] text-[${
-            textColor ? "#fff" : "#000"
-          }] dark:bg-white flex dark:text-black p-1 rounded-full`}
+          className={`bg-[${iconBackground}] text-[${textColor}] dark:bg-white flex dark:text-black p-1 rounded-full`}
           onClick={toggleTheme}
         >
           {theme ? <BsSun /> : <BsMoon />}
