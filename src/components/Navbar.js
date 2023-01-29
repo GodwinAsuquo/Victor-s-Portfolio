@@ -69,14 +69,11 @@ const Navbar = () => {
     <div
       className={`fixed bg-[${navBackground}] shadow-sm dark:bg-[#131313] px-10 py-5 w-full mx-aut0 flex items-center z-10 text-base md:text-lg`}
     >
-      <Link
-        to="/home"
-        className={`text-[${
-          window.location.pathname === "/home" ? "black" : "white"
-        }]`}
-      >
+      <Link to="/home">
         <h4
-          className={`tracking-wider md:text-xl  dark:text-white font-semibold`}
+          className={`tracking-wider md:text-xl text-${
+            window.location.pathname === "/home" ? "black" : "white"
+          } dark:text-white font-semibold`}
         >
           VICTOR ASUQUO
         </h4>
