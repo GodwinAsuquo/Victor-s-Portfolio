@@ -13,7 +13,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
       <h2 className=" text-center dark:text-white font-bold text-2xl pb-10 pt-20">
         Selected Projects
       </h2>
-      <div className="grid md:grid-cols-2 gap-5 px-14">
+      <div className="grid md:grid-cols-2 gap-5 px-6 md:px-14">
         {/* wephco  */}
         <Link to="/wephco">
           <div className="relative flex bg-[#095069] h-[250px] md:h-[390px] w-[100%] rounded-lg p-5 text-white">
