@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const WellaAgent = () => {
   return (
     <>
-      <div className="dark:bg-[#0D0D0D] dark:text-white text-[#000]">
+      <div className="dark:bg-[#0D0D0D] dark:text-white">
         <section className="bg-lightPurple dark:bg-[#0D0D0D] text-white text-center pt-32">
           <h2 className="font-bold text-2xl mb-2 lg:text-5xl">WELLA AGENT</h2>
           <p className="font-light mb-20 w-[60%] m-auto text-lg lg:text-2xl">

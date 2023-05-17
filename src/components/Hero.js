@@ -27,7 +27,7 @@ const Hero = () => {
         </h1>
 
         <p className="m-auto font-light w-[85%] md:w-[45%] text-center text-[22.8px] mt-3 md:text-2xl leading-9">
-          A product designer based in Abuja, Nigeria. Currently, I am designing
+          A product designer. Currently, I am designing
           engaging experiences for users in healthtech. Previously, I have
           worked as a product designer in the proptech and fintech industry.
         </p>
