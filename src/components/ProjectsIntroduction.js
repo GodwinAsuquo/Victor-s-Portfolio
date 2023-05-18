@@ -5,7 +5,7 @@ import portfolio from "../assets/portfolio2.png";
 import chronicare from "../assets/chroniccare2.png";
 import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { forwardRef, useRef } from "react";
+import { forwardRef } from "react";
 
 const ProjectsIntroduction = forwardRef((props, ref) => {
   return (
@@ -22,7 +22,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
                 <h3 className="font-semi-bold md:text-lg">WEPHCO</h3>
                 <p className="text-sm font-light">Real Estate</p>
               </div>
-              <p className="flex flex-row items-center text-xs md:text-base">
+              <p className="flex flex-row items-center text-sm md:text-base">
                 See work
                 <FiChevronRight />
               </p>
@@ -43,7 +43,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
                 <h3 className="font-semi-bold md:text-lg">WELLA AGENT</h3>
                 <p className="text-sm font-light">Health & Wellness</p>
               </div>
-              <p className="flex flex-row items-center text-xs md:text-base">
+              <p className="flex flex-row items-center text-sm md:text-base">
                 See work
                 <FiChevronRight />
               </p>
@@ -64,7 +64,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
                 <h3 className="font-semi-bold md:text-lg">EPAY</h3>
                 <p className="text-sm font-light">Fintech App</p>
               </div>
-              <p className="flex flex-row items-center text-xs md:text-base">
+              <p className="flex flex-row items-center text-sm md:text-base">
                 See work
                 <FiChevronRight />
               </p>
@@ -85,7 +85,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
                 <h3 className="font-semi-bold md:text-lg">MY PORTFOLIO</h3>
                 <p className="text-sm font-light">Work Showcase</p>
               </div>
-              <p className="flex flex-row items-center text-xs md:text-base">
+              <p className="flex flex-row items-center text-sm md:text-base">
                 See work
                 <FiChevronRight />
               </p>
@@ -106,7 +106,7 @@ const ProjectsIntroduction = forwardRef((props, ref) => {
                 <h3 className="font-semi-bold md:text-lg">CHRONICARE</h3>
                 <p className="text-sm font-light">Health & Wellness</p>
               </div>
-              <p className="flex flex-row items-center text-xs md:text-base">
+              <p className="flex flex-row items-center text-sm md:text-base">
                 See work
                 <FiChevronRight />
               </p>

@@ -92,22 +92,24 @@ const Navbar = () => {
         ref={refContainer}
         className={`absolute bg-[${iconBackground}] text-${textColor} right-10  bg-black dark:bg-white px-4 py-1 rounded-[3px] underline underline-offset-2 dark:text-[#131313] md:hidden`}
       >
-        <Link
-          to="https://docs.google.com/document/d/e/2PACX-1vSecgDfuqRhJduPZcRQlVJzlCqrHG5WkReehjWWnZm-z2KCGLmRShZIUF7zpas74gFe3sNYN_rl33XK/pub"
+        <a
+          href="http://docs.google.com/document/d/1IRPx_9FvLI6jVGXgL-9VYX_S5IDvrG_i7UhlU9E05BA/edit"
           target="_blank"
+          rel="noopener noreferrer"
         >
           My Resume
-        </Link>
+        </a>
       </button>
       <button
         className={`absolute hidden bg-[${iconBackground}] text-${textColor}  right-10 dark:text-[#131313] dark:bg-white bg-black px-4 py-1 rounded-[3px] underline underline-offset-2 md:block`}
       >
-        <Link
-          to="https://docs.google.com/document/d/e/2PACX-1vSecgDfuqRhJduPZcRQlVJzlCqrHG5WkReehjWWnZm-z2KCGLmRShZIUF7zpas74gFe3sNYN_rl33XK/pub"
+        <a
+          href="http://docs.google.com/document/d/1IRPx_9FvLI6jVGXgL-9VYX_S5IDvrG_i7UhlU9E05BA/edit"
           target="_blank"
+          rel="noopener noreferrer"
         >
           View My Resume
-        </Link>
+        </a>
       </button>
     </div>
   );
